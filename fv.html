@@ -1,0 +1,28 @@
+<!doctype.html>
+<html>
+<head>
+<title>Js</title>
+<script>
+	function  fname()
+	{
+         let x = document.forms["fname"]["name"].value;
+         if(x==" ")
+         	{
+         	alert("name must be filled out");
+         	return false;
+         	}
+	}
+</script>
+</head>
+
+<body>
+<form name="fname" method="post" onsubmit="return fname()">
+	name:<input type="text"  name="name">
+	<input type="submit" value="submit">
+</form>
+</body>
+
+
+</html>
+	
+	
